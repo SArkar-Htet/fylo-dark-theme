@@ -1,5 +1,6 @@
 .intro {
   background-color: $bg-intro;
+  background: linear-gradient($bg-intro, $bg-intro 62%, $bg-main, $bg-main 62%);
 
   .nav {
     display: flex;
@@ -28,6 +29,24 @@
     &__link {
       color: $white;
       text-decoration: none;
+    }
+  }
+
+  .hero {
+    padding: 24px 35px;
+    text-align: center;
+    background-image: url("../../images/bg-curvy-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: center 46%;
+
+    &__image {
+      max-width: 100%;
+      height: auto;
+      vertical-align: middle;
+    }
+
+    &__body {
+      margin: 2rem auto;
     }
   }
 }
