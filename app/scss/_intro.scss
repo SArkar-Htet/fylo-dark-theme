@@ -1,6 +1,8 @@
 .intro {
   background-color: $bg-intro;
-  background: linear-gradient($bg-intro, $bg-intro 62%, $bg-main, $bg-main 62%);
+  @include breakpoint-down(small) {
+    background: linear-gradient($bg-intro, $bg-intro 62%, $bg-main, $bg-main 62%);
+  }
 
   .nav {
     display: flex;
@@ -8,8 +10,14 @@
     align-items: center;
     padding: 24px 20px;
 
+    @include breakpoint-up(large) {
+      padding: 50px 70px;
+    }
+
     &__logo {
-      width: 80px;
+      @include breakpoint-down(small) {
+        width: 80px;
+      }
     }
 
     &__menu {
@@ -23,6 +31,10 @@
 
       &:not(:last-child) {
         padding-right: 24px;
+
+        @include breakpoint-up(large) {
+          padding-right: 55px;
+        }
       }
     }
 
@@ -42,7 +54,13 @@
     text-align: center;
     background-image: url("../../images/bg-curvy-mobile.svg");
     background-repeat: no-repeat;
+    background-size: contain;
     background-position: center 46%;
+
+    @include breakpoint-up(medium) {
+      background-image: url("../../images/bg-curvy-desktop.svg");
+      background-position: center bottom;
+    }
 
     &__image {
       max-width: 100%;
@@ -51,7 +69,18 @@
     }
 
     &__body {
+      max-width: 500px;
       margin: 2rem auto;
+    }
+
+    @include breakpoint-up(medium) {
+      &__title {
+        font-size: $font-lg;
+      }
+
+      &__text {
+        font-size: $font-m;
+      }
     }
   }
 }
