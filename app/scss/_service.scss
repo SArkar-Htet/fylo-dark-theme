@@ -1,0 +1,24 @@
+.main {
+  background-color: $bg-main;
+
+  .service {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+    padding: 95px 35px;
+    gap: 70px;
+
+    &__card {
+      text-align: center;
+
+      &__image {
+        margin-bottom: 20px;
+      }
+
+      &__title {
+        font-size: 18px;
+      }
+    }
+  }
+}
