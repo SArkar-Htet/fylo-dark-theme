@@ -1,7 +1,18 @@
 .intro {
+  position: relative;
   background-color: $bg-intro;
+  background-image: url("../../images/bg-curvy-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center 55%;
+
   @include breakpoint-down(small) {
-    background: linear-gradient($bg-intro, $bg-intro 62%, $bg-main, $bg-main 62%);
+    background-image: url("../../images/bg-curvy-mobile.svg"), linear-gradient($bg-intro, $bg-intro 63%, $bg-main, $bg-main 63%);
+  }
+
+  @include breakpoint-up(medium) {
+    background-image: url("../../images/bg-curvy-desktop.svg");
+    background-position: center bottom;
   }
 
   .nav {
@@ -52,15 +63,6 @@
   .hero {
     padding: 24px 35px;
     text-align: center;
-    background-image: url("../../images/bg-curvy-mobile.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center 46%;
-
-    @include breakpoint-up(medium) {
-      background-image: url("../../images/bg-curvy-desktop.svg");
-      background-position: center bottom;
-    }
 
     &__image {
       max-width: 100%;
@@ -69,7 +71,7 @@
     }
 
     &__body {
-      max-width: 500px;
+      max-width: 640px;
       margin: 2rem auto;
     }
 
@@ -79,6 +81,7 @@
       }
 
       &__text {
+        padding: 0 4.5rem;
         font-size: $font-m;
       }
     }
