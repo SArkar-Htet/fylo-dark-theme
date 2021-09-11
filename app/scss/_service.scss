@@ -8,13 +8,18 @@
     justify-content: center;
     padding: 95px 35px;
     gap: 70px;
+    max-width: 880px;
+    margin: 0 auto;
+
+    @include breakpoint-up(large) {
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 135px;
+      padding-right: 0px;
+      padding-left: 0px;
+    }
 
     &__card {
       text-align: center;
-
-      &__image {
-        margin-bottom: 20px;
-      }
 
       &__title {
         font-size: 18px;
