@@ -31,6 +31,20 @@ body {
     font-weight: $font-bold;
   }
 
+  .container {
+    padding: 50px 35px;
+
+    @include breakpoint-up(large) {
+      padding: 50px 70px;
+    }
+    
+    &--sm {
+      max-width: 1024px;
+      margin: 0 auto;
+    }
+
+  }
+
   .btn__cta {
     position: relative;
     display: inline-block;
