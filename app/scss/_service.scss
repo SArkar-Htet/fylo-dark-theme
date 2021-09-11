@@ -8,14 +8,18 @@
     justify-content: center;
     padding: 95px 35px;
     gap: 70px;
-    max-width: 880px;
+    max-width: 1024px;
     margin: 0 auto;
 
-    @include breakpoint-up(large) {
+    @include breakpoint-up(medium) {
       grid-template-columns: repeat(2, 1fr);
+      
+    }
+
+    @include breakpoint-up(large) {
       column-gap: 135px;
-      padding-right: 0px;
-      padding-left: 0px;
+      padding-right: 70px;
+      padding-left: 70px;
     }
 
     &__card {
