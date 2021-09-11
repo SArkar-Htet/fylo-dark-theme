@@ -6,7 +6,7 @@
     grid-template-columns: 1fr;
     align-items: center;
     justify-content: center;
-    gap: 70px;
+    gap: 4.375rem;
 
     @include breakpoint-up(medium) {
       grid-template-columns: repeat(2, 1fr);
@@ -14,7 +14,7 @@
     }
 
     @include breakpoint-up(large) {
-      column-gap: 135px;
+      column-gap: 8.4375rem;
     }
 
     &__card {

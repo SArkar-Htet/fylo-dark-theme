@@ -32,14 +32,14 @@ body {
   }
 
   .container {
-    padding: 50px 35px;
+    padding: 3.125rem 2.1875rem;
 
     @include breakpoint-up(large) {
-      padding: 50px 70px;
+      padding: 3.125rem 4.375rem;
     }
     
     &--sm {
-      max-width: 1024px;
+      max-width: 64rem;
       margin: 0 auto;
     }
 
@@ -49,10 +49,10 @@ body {
     position: relative;
     display: inline-block;
     background: linear-gradient(to right, $cyan, $blue);
-    padding: 1rem 80px;
+    padding: 1rem 5rem;
     color: $white;
     text-decoration: none;
-    border-radius: 50px;
+    border-radius: 3.125rem;
 
     &::before {
       content: "";
@@ -62,7 +62,7 @@ body {
       bottom: 0;
       left: 0;
       background-color: rgba(255, 255, 255, 0.5);
-      border-radius: 50px;
+      border-radius: 3.125rem;
       opacity: 0;
       transition: all 300ms ease-in-out;
     }

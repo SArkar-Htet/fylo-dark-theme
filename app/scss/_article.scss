@@ -3,15 +3,9 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  // padding: 24px 35px;
 
   @include breakpoint-up(medium) {
     flex-direction: row;
-  }
-
-  @include breakpoint-up(large) {
-    // padding-right: 70px;
-    // padding-left: 70px;
   }
 
   &__header {
