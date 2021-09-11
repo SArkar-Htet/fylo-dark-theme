@@ -15,6 +15,14 @@ body {
   font-family: 'Open Sans', sans-serif;
   color: $white;
 
+  h2 {
+    font-size: $font-lg;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
   .font-secondary {
     font-family: 'Raleway', sans-serif;
   }
