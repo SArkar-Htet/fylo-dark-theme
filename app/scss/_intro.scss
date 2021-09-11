@@ -75,7 +75,7 @@
 
     @include breakpoint-up(medium) {
       &__title {
-        font-size: $font-lg;
+        font-size: $font-x;
       }
 
       &__text {
