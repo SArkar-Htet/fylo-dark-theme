@@ -19,10 +19,12 @@ $white: hsl(0, 0%, 100%);
 // $font-secondary: 'Raleway', sans-serif;
 
 // Font Size
-$font-sm: 0.875rem;
-$font-m: 1rem;
-$font-lg: 1.125rem;
-$font-x: 2rem;
+$font-xxs: 0.625rem; //10px
+$font-xs: 0.75rem; //12px
+$font-sm: 0.875rem; //14px
+$font-m: 1rem; //16px
+$font-lg: 1.125rem; //18px
+$font-xl: 2rem; //32px
 
 // Font Weight
 $font-regular: 400;
