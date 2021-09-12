@@ -9,16 +9,26 @@
   &__nav {
     display: grid;
     grid-template-columns: 1fr;
+    grid-template-areas: "addr" "contact" "col1" "col2" "social";
     justify-content: space-between;
-    
+
+    @include breakpoint-up(medium) {
+      grid-template-columns: 3fr repeat(2, 1fr) 2fr;
+      grid-template-areas: 
+        "addr col1 col2 social"
+        "contact col1 col2 social";
+      column-gap: 40px;
+    }
+
     @include breakpoint-up(large) {
       grid-template-columns: 3fr 2fr repeat(2, 1fr) 2fr;
+      grid-template-areas: "addr contact col1 col2 social";
       gap: 40px;
       margin-bottom: 50px;
     }
 
-    @include breakpoint-up(1140px) {
-      gap: 80px;
+    @media screen and (min-width: 1140px) {
+      gap: 80px; 
     }
 
   }
@@ -41,9 +51,27 @@
     max-width: 100%;
     height: auto;
     vertical-align: middle;
+    padding-right: 1rem;
+  }
+
+  &__addr {
+    grid-area: addr;
+  }
+
+  &__contact {
+    grid-area: contact;
+  }
+
+  .col-1 {
+    grid-area: col1;
+  }
+
+  .col-2 {
+    grid-area: col2;
   }
 
   &__social {
+    grid-area: social;
     text-align: right;
     &__item {
       display: inline-block;
