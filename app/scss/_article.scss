@@ -27,7 +27,7 @@
   }
 
   &__title {
-    @include breakpoint-up(large) {
+    @include breakpoint-up(medium) {
       font-size: 2rem;
     }
   }

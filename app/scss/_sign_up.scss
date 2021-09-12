@@ -5,10 +5,26 @@
     padding: 20px;
     border-radius: 10px;
     text-align: center;
+
+    @include breakpoint-up(medium) {
+      padding: 41px 75px;
+    }
+  }
+
+  &__title {
+    @include breakpoint-up(medium) {
+      font-size: 21px;
+    }
+  }
+
+  &__footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
   }
 
   &__action {
-    width: 280px;
     margin: 12px auto;
     border: 0;
     outline: 0;
@@ -16,7 +32,22 @@
     border-radius: 50px;
   }
 
+  &__email {
+    flex: 1;
+
+    @include breakpoint-up(medium) {
+      flex: 100%;
+    }
+
+    @include breakpoint-up(large) {
+      flex: 3;
+      margin-right: 24px;
+    }
+
+  }
+
   &__btn {
+    flex: 1;
     @extend .btn__cta;
   }
 
