@@ -51,11 +51,19 @@
     max-width: 100%;
     height: auto;
     vertical-align: middle;
-    padding-right: 1rem;
+    margin-right: 1rem;
   }
 
   &__addr {
     grid-area: addr;
+    padding: 10px 0;
+    &__list {
+      display: flex;
+      span:first-child {
+        min-width: 18px;
+        margin-right: 1rem;
+      }
+    }
   }
 
   &__contact {
@@ -106,6 +114,17 @@
     &__social {
       margin-top: 5rem;
       text-align: center;
+    }
+  }
+  .attribution { 
+    font-size: 11px; text-align: center; 
+    a {
+      font-weight: $font-bold;
+      color: $white;
+      transition: all 300ms ease-in-out;
+      &:hover {
+        color: $cyan;
+      }
     }
   }
 
