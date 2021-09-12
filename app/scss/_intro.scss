@@ -74,6 +74,11 @@
       margin: 2rem auto;
     }
 
+    &__btn {
+      @extend .btn__cta;
+      padding: 1rem 5rem;
+    }
+
     @include breakpoint-up(medium) {
       &__title {
         font-size: $font-xl;
