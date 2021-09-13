@@ -1,6 +1,7 @@
 .testimonial {
   position: relative;
   width: 95%;
+  padding-top: 3.125rem;
   margin: 4.25rem auto 0;
   display: grid;
   grid-template-columns: 1fr;
@@ -17,7 +18,7 @@
     content: "";
     position: absolute;
     top: 2rem;
-    left: 2.625rem;
+    left: 2rem;
     width: 1.375rem;
     height: 1.125rem;
     background-image: url(../../images/bg-quotes.png);
