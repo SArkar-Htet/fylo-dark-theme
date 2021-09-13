@@ -28,13 +28,13 @@
 
   &__title {
     @include breakpoint-up(medium) {
-      font-size: 2rem;
+      font-size: $font-xxl;
     }
   }
 
   &__description {
     @include breakpoint-up(large) {
-      font-size: 1rem;
+      font-size: $font-m;
     }
   }
 
