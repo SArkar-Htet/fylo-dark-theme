@@ -52,7 +52,6 @@
     max-width: 100%;
     height: auto;
     vertical-align: middle;
-    margin-right: 1rem;
   }
 
   &__addr {
@@ -69,6 +68,9 @@
 
   &__contact {
     grid-area: contact;
+    img {
+      margin-right: 1rem;
+    }
   }
 
   &__menu {

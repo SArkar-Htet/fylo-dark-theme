@@ -55,7 +55,19 @@ body {
 
   }
 
+  .btn {
+    background: none;
+    cursor: pointer;
+
+    &, &:focus, &:active {
+      border: none;
+      outline: none;
+      box-shadow: none;
+    }
+  }
+
   .btn__cta {
+    @extend .btn;
     position: relative;
     display: inline-block;
     background: linear-gradient(to right, $cyan, $blue);
@@ -63,7 +75,6 @@ body {
     text-decoration: none;
     text-align: center;
     border-radius: 3.125rem;
-    cursor: pointer;
 
     &::before {
       content: "";
